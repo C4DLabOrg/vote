@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('/dashboard', function () {
+    return view('users.dashboard');
+});
+Route::get('/vote', function () {
+    return view('users.vote');
+});
+Route::get('/layouts', function () {
+    return view('layouts.layouts');
 });
